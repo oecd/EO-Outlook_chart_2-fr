@@ -662,7 +662,7 @@ width:175px;
   stroke-width: 0.25;
   font-family: 'Noto Sans', sans-serif;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #0b1e2d;
   }
 
@@ -842,7 +842,7 @@ text-decoration: underline;
 
 .forecast{
   stroke:#dce2e7;
-  stroke-dasharray: 5,5;
+  stroke-dasharray: 1,10;
 }
 #updateTag{
   margin-left:5%;
@@ -1084,15 +1084,15 @@ div.tooltip {
 
 .explanatory{
    font-family: 'Oswald', sans-serif;
-      font-size: 2.5rem;
-      font-weight: 400;
+      font-size: 2.75rem;
+      font-weight: 600;
       fill: rgb(97, 97, 97);
 }
 
 .annotation-note-label{
    font-family: 'Oswald', sans-serif;
-      font-size: 1.25rem;
-      font-weight: 300;
+      font-size: 1.5rem;
+      font-weight: 400;
       fill: rgb(97, 97, 97);
 }
 
@@ -1124,4 +1124,8 @@ div.tooltip {
 .annotation-note-label{
       font-size: 1rem;
 }
+
+.tick{
+  font-size: 1rem;
+  }
 }

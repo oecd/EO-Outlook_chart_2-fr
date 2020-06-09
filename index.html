@@ -59,7 +59,7 @@
     var divMap = d3.select("body").append("div")
         .attr("class", "tooltip")
         .style("opacity", 0); 
-    var color = ["#32A674", "#0B68AF", "#E73741", "#E1B400","#993484",  "#DF521E", "#719E24"];
+    var color = ["#32A674", "#993484", "#E73741", "#E1B400","#993484",  "#DF521E", "#719E24"];
 
     var margin = { top: 70, right: 50, bottom: 30, left: 40 };
 
@@ -73,7 +73,7 @@
 
     if (width > 650){
             height = 290;//height = width * mapRatio;
-            lagText = 40;
+            lagText = 10;
 
     }
     else{
@@ -185,7 +185,7 @@
             .append("path")
             .attr("fill", "none"/*"#8DCD79"*/)
             .attr("stroke", function (d) { return color[0] })
-            .attr("stroke-width","4px")
+            .attr("stroke-width", "5px")
            // .attr("opacity", function () { if (k == 0) return 0.1; else return 1; })
             .attr("class", "lineContext")
             //.attr("id", function (d) { return "doubleHit" + i; })
@@ -216,7 +216,7 @@
             .append("path")
             .attr("fill", "none")
             .attr("stroke", function (d) { return color[0] })
-            .attr("stroke-width", "4px")
+            .attr("stroke-width", "5px")
             .attr("opacity",0.5)
             .attr("d", function (d) {
                 return d3.line()//area
@@ -232,7 +232,7 @@
             scenarioSVG
                 .append("path")
                 .attr("fill", "none")
-                .attr("stroke-width", "4px")
+                .attr("stroke-width", "5px")
                 .attr("class","forecast")
                 .transition().delay(7500)
                 .attr("d", function (d) {
@@ -266,7 +266,7 @@
                 .append("path")
                 .attr("fill", "none")
                 .attr("stroke", function (d) { return color[1] })
-                .attr("stroke-width", "4px")
+                .attr("stroke-width", "5px")
                 .attr("d", function (d) {
                     return d3.line()//area
                         .x(function (d) { return x(dateParser(d.TIME)); })
@@ -281,7 +281,7 @@
             scenarioSVG
                 .append("path")
                 .attr("fill", "none")
-                .attr("stroke-width", "4px")
+                .attr("stroke-width", "5px")
                 .attr("class", "forecast")
                 .transition().delay(6500)
                 .attr("d", function (d) {
@@ -310,7 +310,7 @@
                 .append("path")
                 .attr("fill", "none")
                 .attr("stroke", function (d) { return color[2] })
-                .attr("stroke-width", "4px")
+                .attr("stroke-width", "5px")
                 .attr("d", function (d) {
                     return d3.line()//area
                         .x(function (d) { return x(dateParser(d.TIME)); })
@@ -325,7 +325,7 @@
             scenarioSVG
                 .append("path")
                 .attr("fill", "none")
-                .attr("stroke-width", "4px")
+                .attr("stroke-width", "5px")
                 .attr("class", "forecast")
                 .transition().delay(7500)
                 .attr("d", function (d) {
@@ -369,7 +369,7 @@
                     },
                     x: x(dateParser("2021-Q1")),
                     y: y(annotationMark[0].singleHit),
-                    dy: -50,
+                    dy: -30,
                     dx: -50
                 }
             ]
@@ -380,7 +380,7 @@
                     },
                     x: x(dateParser("2021-Q1")),
                     y: y(annotationMark[0].doubleHit),
-                    dy: 40,
+                    dy: 30,
                     dx: 20
                 }
             ]
