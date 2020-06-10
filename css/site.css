@@ -1084,7 +1084,7 @@ div.tooltip {
 
 .explanatory{
    font-family: 'Oswald', sans-serif;
-      font-size: 2.75rem;
+      font-size: 2.25rem;
       font-weight: 600;
       fill: rgb(97, 97, 97);
 }
@@ -1096,11 +1096,18 @@ div.tooltip {
       fill: rgb(97, 97, 97);
 }
 
+@media only screen and (max-width: 975px) {
+
+.explanatory{
+      font-size: 2rem;
+
+}
+}
 
 @media only screen and (max-width: 850px) {
 
 .explanatory{
-      font-size: 2rem;
+      font-size: 1.5rem;
 
 }
 }
